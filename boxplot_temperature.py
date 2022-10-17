@@ -37,4 +37,4 @@ for i in range(len(january)):
 print(valuesoftem)
 print(january_abfreq)
 plt.boxplot(a)
-#plt.show()
+plt.show()

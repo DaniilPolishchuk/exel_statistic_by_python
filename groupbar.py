@@ -1,12 +1,16 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
-
+dataframe1 = pd.read_excel('testfile.xlsx')
+ 
 #data 
 nameofgroups= ["Restaurant 1", 'Restaurant 2']
 labels = [1, 2, 3, 4, 5]
-rest1_values = np.random.randint(1,6,size=100)
-rest2_values = np.random.randint(1,6,size=100)
+rest1_values = dataframe1[nameofgroups[0]]
+rest2_values = dataframe1[nameofgroups[1]]
+# rest1_values = np.random.randint(1,6,size=100)
+# rest2_values = np.random.randint(1,6,size=101)
 
 #amount of element in data sets 
 total_amount1 = len(rest1_values)
